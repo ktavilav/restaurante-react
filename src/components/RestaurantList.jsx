@@ -9,11 +9,11 @@ const RestaurantList = () => {
     // Simulamos la obtención de datos de una API
     const fetchData = async () => {
       const data = [
-        { id: 1, nombre: 'Restaurante A', categoria: 'Comida Rápida', calificacion: 4.5 },
-        { id: 2, nombre: 'Restaurante B', categoria: 'Pizza', calificacion: 5 },
-        { id: 3, nombre: 'Restaurante C', categoria: 'Hamburguesas', calificacion: 4 },
-        { id: 4, nombre: 'Restaurante D', categoria: 'Sushi', calificacion: 4.8 },
-        { id: 5, nombre: 'Restaurante E', categoria: 'Tacos', calificacion: 3.5 },
+        { id: 1, nombre: 'Restaurante A', categoria: 'Comida Rápida', calificacion: 4.5, imagen: '/images/fastfood.jpg' },
+        { id: 2, nombre: 'Restaurante B', categoria: 'Pizza', calificacion: 5, imagen: '/images/pizza.jpg' },
+        { id: 3, nombre: 'Restaurante C', categoria: 'Hamburguesas', calificacion: 4, imagen: '/images/burger.jpg' },
+        { id: 4, nombre: 'Restaurante D', categoria: 'Sushi', calificacion: 4.8, imagen: '/images/sushi.jpg' },
+        { id: 5, nombre: 'Restaurante E', categoria: 'Tacos', calificacion: 3.5, imagen: '/images/tacos.jpg' },
       ];
       setRestaurantes(data);
     };
@@ -30,6 +30,12 @@ const RestaurantList = () => {
             <h2 className="text-xl font-bold mb-2">{restaurante.nombre}</h2>
             <p className="text-gray-600">{restaurante.categoria}</p>
             <p className="text-yellow-500">Calificación: {restaurante.calificacion}</p>
+            <img
+              src={restaurante.imagen}
+              alt={restaurante.nombre}
+              className="w-full mb-2 rounded-md"  
+              style={{ maxWidth: '30%', height: 'auto' }}  
+            />
             <Link to={`/restaurants/${restaurante.id}`} className="text-blue-500">Ver Detalles</Link>
           </li>
         ))}

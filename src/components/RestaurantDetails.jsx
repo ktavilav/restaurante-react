@@ -12,6 +12,7 @@ const RestaurantDetails = () => {
     <div className="text-center">
       <h1 className="text-3xl font-bold mb-4">Detalles del Restaurante {id}</h1>
       <div className="p-4 border border-gray-300 rounded-md">
+        <img src={restaurante.imagen} alt={restaurante.nombre} className="w-full mb-2 rounded-md" />
         <h2 className="text-xl font-bold mb-2">{restaurante.nombre}</h2>
         <p className="text-gray-600">{restaurante.categoria}</p>
         <p className="text-yellow-500">Calificación: {restaurante.calificacion}</p>
