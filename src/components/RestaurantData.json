@@ -1,0 +1,7 @@
+[
+    { "id": 1, "nombre": "Restaurante A", "categoria": "Comida Rápida", "calificacion": 4.5, "imagen": "/images/fastfood.jpg","mapa": "40.7128,-74.0060" },
+    { "id": 2, "nombre": "Restaurante B", "categoria": "Pizza", "calificacion": 5, "imagen": "/images/pizza.jpg" ,"mapa": "40.7128,-74.0060"},
+    { "id": 3, "nombre": "Restaurante C", "categoria": "Hamburguesas", "calificacion": 4, "imagen": "/images/burger.jpg","mapa": "40.7128,-74.0060" },
+    { "id": 4, "nombre": "Restaurante D", "categoria": "Sushi", "calificacion": 4.8, "imagen": "/images/sushi.jpg","mapa": "40.7128,-74.0060" },
+    { "id": 5, "nombre": "Restaurante E", "categoria": "Tacos", "calificacion": 3.5, "imagen": "/images/tacos.jpg","mapa": "40.7128,-74.0060" }
+]
